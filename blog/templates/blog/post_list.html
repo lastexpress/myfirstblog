@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>One Zone</title>
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,12 +17,19 @@
 				<li><a href="#">ОПАчки</a></li>
 				<li><a href="#">ОПАна</a></li>
 				<li><a href="#">ОПАсно</a></li>
-				<li><a href="#">ОПАло</a></li>
+				{% for post in posts %}
+				<li><a href="#">{{ post.title }}</a></li>
+				{% endfor %}
 				<li><a href="#">ОПАсо</a></li>
 				<li><a href="#">ОПАку</a></li>
 			</ul>
-			<p>Hi there!</p>
-			<p>It works!</p>
+			{% for post in posts %}
+			<div>
+				<p>published: {{ post.published_date }}</p>
+				<h1><a href="#">{{ post.title }}</a></h1>
+				<p>{{ post.text|linebreaksbr }}</p>
+			</div>
+			{% endfor %}
 		</div>
 	</section>
 
