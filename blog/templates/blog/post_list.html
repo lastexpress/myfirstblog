@@ -9,30 +9,13 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<section>
+	{% for post in posts %}
 		<div>
-			<h1>Hello works</h1>
-			<ul>
-				<li><a href="#">ОПА</a></li>
-				<li><a href="#">ОПАчки</a></li>
-				<li><a href="#">ОПАна</a></li>
-				<li><a href="#">ОПАсно</a></li>
-				{% for post in posts %}
-				<li><a href="#">{{ post.title }}</a></li>
-				{% endfor %}
-				<li><a href="#">ОПАсо</a></li>
-				<li><a href="#">ОПАку</a></li>
-			</ul>
-			{% for post in posts %}
-			<div>
-				<p>published: {{ post.published_date }}</p>
-				<h1><a href="#">{{ post.title }}</a></h1>
-				<p>{{ post.text|linebreaksbr }}</p>
-			</div>
-			{% endfor %}
-			123
+			<p>published: {{ post.published_date }}</p>
+			<h1><a href="#">{{ post.title }}</a></h1>
+			<p>{{ post.text|linebreaksbr }}</p>
 		</div>
-	</section>
+	{% endfor %}
 
 
 
