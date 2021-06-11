@@ -18,7 +18,7 @@
 	<div class="centers">
 		<nav class="menu">
 			<div class="logo">
-				<a href="index.html" data-aos="zoom-in-up">KorshChamp</a>
+				<a href="{% url 'post_list' %}" data-aos="zoom-in-up">KorshChamp</a>
 			</div>
 			<div class="nav-list">
 				<ul>
@@ -99,6 +99,10 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="page-header">
+		<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+		<h1><a href="{% url 'post_new' %}">Django Girls Blog</a></h1>
 	</div>
 
 	{% block content %}

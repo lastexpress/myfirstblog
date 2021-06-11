@@ -38,14 +38,14 @@ a{
 				background: linear-gradient(90deg, rgba(219,121,36,1) 22%, rgba(214,38,80,1) 79%);
 				color: #0B2349;
 				-webkit-background-clip: text;
-  			-webkit-text-fill-color: transparent;
+  				-webkit-text-fill-color: transparent;
 			}
 				.logo a:hover{
 					background: linear-gradient(90deg, rgba(214,25,115,1) 22%, rgba(232,191,39,1) 79%);
 					color: #0B2349;
 					-webkit-background-clip: text;
-  				-webkit-text-fill-color: transparent;
-  				transition: all ease 0.5s;
+  					-webkit-text-fill-color: transparent;
+  					transition: all ease 0.5s;
 				}
 
 				.nav-list{
@@ -544,10 +544,66 @@ a{
 
 .post{
 	width: 100%;
-	min-height: 20vh;
+	min-height: 10vh;
 	border: 1px solid red;
+	margin: 0px 0px 15px 0px;
 }
 	.date{
 		width: 50%;
 		height: 50%;
+		border: 1px solid red;
+		color: #fff;
+		font-family: RoadTest;
+		display: flex;
+		justify-content: center;
 	}
+		.post h1{
+			margin: 0;
+			color: #fff;
+			width: 50%;
+			height: 50%;
+			border: 1px solid red;
+			display: flex;
+			justify-content: flex-end;
+		}
+			.post p{
+				margin: 0;
+				color: #fff;
+				width: 50%;
+				height: 50%;
+				border: 1px solid red;
+				font-size: 24px;
+			}
+
+.page-header h1 a{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+}
+
+.titles{
+	font-family: roboto;
+	font-weight: bold;
+	color: #fff;
+	font-size: 32px;
+	margin: 0;
+}
+
+.post-form{
+	width: 100%;
+	min-height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.save{
+	width: 60px;
+	height: 40px;
+	outline: none;
+	border: none;
+	font-size: 18px;
+}
