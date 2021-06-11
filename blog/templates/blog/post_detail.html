@@ -17,26 +17,15 @@
 </head>
 <body>
 	{% block content %}
-		{% for post in posts %}
-		<div class="row">
-			<div class="pore">
-				<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-				<p>{{ post.text|linebreaksbr }}</p>
-				<p>published: {{ post.published_date }}</p>
-			</div>
+		<div class="post">
+			{% if post.published_date %}
+				<div class="date">
+					{{ post.published_date }}
+				</div>
+			{% endif %}
+			<h1>{{ post.title }}</h1>
+			<p>{{ post.text|linebreaksbr }}</p>
 		</div>
-		{% endfor %}
-	{% endblock %}
-
-	{% block 123 %}
-		{% for post in posts %}
-		<div class="row">
-			<div class="pore">
-				<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-				<p>{{ post.text|linebreaksbr }}</p>
-			</div>
-		</div>
-		{% endfor %}
 	{% endblock %}
 	
 

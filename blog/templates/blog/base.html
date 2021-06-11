@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>KorshChamp</title>
+	<link rel="shortcut icon" href="images/038-github.png" type="image/png">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/aos.css"/>
+	<script type="text/javascript" src="js/aos.js"></script>
+	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+	<div class="centers">
+		<nav class="menu">
+			<div class="logo">
+				<a href="index.html" data-aos="zoom-in-up">KorshChamp</a>
+			</div>
+			<div class="nav-list">
+				<ul>
+					<li><a href="portfolio.html" data-aos="flip-up">Портфолио</a></li>
+					<li><a href="resume.html" data-aos="flip-up">Резюме</a></li>
+				</ul>
+			</div>
+			<div class="menu-links">
+				<a href="https://vk.com/iceiceicenice" target="_blank" data-aos="flip-up">VKontakte</a>
+				<a href="https://www.instagram.com/korshchamp/" target="_blank" data-aos="flip-up">Instagram</a>
+			</div>
+		</nav>
+		<div class="main-info">
+			<div class="desk-title">
+				<div class="me-info" data-aos="zoom-in">
+					<div class="me-text" data-aos="zoom-in-up">
+						<h3>I&nbsp; AM&nbsp; KORSHUNOV GEORGE</h3>
+						<h1>GRAPHIC DESIGNER</h1>
+						<div class="contact-btns">
+							<a href="https://vk.com/iceiceicenice" target="_blank">Contact Me</a>
+						</div>
+					</div>
+					<div class="me-img">
+						<img src="images/" alt="">
+					</div>
+				</div>
+				<div class="me-about" data-aos="zoom-in-right">
+					<div class="sun"></div>
+					<div class="grass"></div>
+  				<div class="square"></div>
+  				<div class="round"></div>
+  				<div class="about-text">
+  					<div class="about-title">
+  						<h3>Обо мне</h3>
+  						<h1>Я Изучаю FRONT-END разработку</h1>
+  					</div>
+  				</div>
+				</div>
+			</div>
+			<div class="my-work">
+				<div class="mywork-title">
+					<span data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">Последняя вёрстка</span>
+					<h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">KorshChamp Portfolio-WS</h3>
+					<a href="#" data-aos="fade-left">Mоё портфолио</a>
+				</div>
+				<a class="mywork-links" href="https://sun9-4.userapi.com/impg/sMTtH4emVXfx901rkANtbrcUvnKsDgok4iU6Ew/L0HgDd1JP50.jpg?size=1530x2160&quality=96&sign=0c8fdd00cc900cbb3ecdb77d04c0355c&type=album" target="_blank">
+					<img src="images/Screenshot_2.png" alt="ws" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+				</a>
+			</div>
+			<div class="copyright">
+				<div class="copy-title">
+					<h3 data-aos="zoom-in-left">Get to know me!</h3>
+				</div>
+				<div class="copy-content">
+					<span>
+						<ul>
+							<li data-aos="zoom-out"><i class="fas fa-usd-circle"></i> Со мной весело, иногда мне кажется.....</li>
+							<li data-aos="zoom-out"><i class="fas fa-usd-circle"></i> Мне всего 19 лет,&nbsp; и&nbsp; я студент 
+								<a href="http://gfi.edu.ru/">глазовского инженерно-экономического института</a>
+							</li>
+							<li data-aos="zoom-out"><i class="fas fa-usd-circle"></i> Хочу пиздец как изучить фронтенд разработку&nbsp; и работать&nbsp; на фрилансе</li>
+						</ul>
+					</span>
+					<span>
+						<img src="images/AVK_2864.jpg" alt="rofl" data-aos="zoom-out">
+						<p data-aos="zoom-out">
+							<i class="fas fa-usd-circle"></i>
+							Любое сходство с живыми или мертвыми людьми носит чисто преднамеренный характер.
+						</p>
+					</span>
+					<span class="second-text">
+						<ul>
+							<li data-aos="zoom-out"><i class="fas fa-usd-circle"></i> Моё хобби - бег на короткие дистанции, 60 и 100м, катание на горном велосипеде, игры и увлечения.</li>
+							<li data-aos="zoom-out"><i class="fas fa-usd-circle"></i> У меня разряд Кандидат в мастера-спорта по лёгкой атлетике</li>
+							<li data-aos="zoom-out"><i class="fas fa-usd-circle"></i> Однажды в городе Глазове мы с моими друзьями пошли в поле....</li>
+						</ul>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% block content %}
+	{% endblock %}
+	
+
+
+
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script>
+  		AOS.init();
+	</script>
+
+
+
+
+</body>
+</html>
